@@ -1,0 +1,10 @@
+C:\Users\cherrera\Desktop\Actividad Integradora 11\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.csproj.AssemblyReference.cache
+C:\Users\cherrera\Desktop\Actividad Integradora 11\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.Form1.resources
+C:\Users\cherrera\Desktop\Actividad Integradora 11\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.Properties.Resources.resources
+C:\Users\cherrera\Desktop\Actividad Integradora 11\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.csproj.GenerateResource.cache
+C:\Users\cherrera\Desktop\Actividad Integradora 11\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.csproj.CoreCompileInputs.cache
+C:\Users\cherrera\Desktop\Actividad Integradora 11\Act_Integ_1\Act_Integ_1\bin\Debug\Act_Integ_1.exe.config
+C:\Users\cherrera\Desktop\Actividad Integradora 11\Act_Integ_1\Act_Integ_1\bin\Debug\Act_Integ_1.exe
+C:\Users\cherrera\Desktop\Actividad Integradora 11\Act_Integ_1\Act_Integ_1\bin\Debug\Act_Integ_1.pdb
+C:\Users\cherrera\Desktop\Actividad Integradora 11\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.exe
+C:\Users\cherrera\Desktop\Actividad Integradora 11\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.pdb
