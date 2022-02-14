@@ -1,0 +1,282 @@
+ahi lo clono, segui vos asi aprendes los comandos
+yoteo veo asi te gui' -
+
+
+eso quiere decir que vos armaste un branch local
+te asignaron una tarea, y ahora que tenes todo listo, subis TUS cambios al server
+como estas subiendo a otro repo (poo?brEnch_1) la rama principal no se ve afectada
+eso se llama laburar por gitflow, o sea cada dev se crea su propio branch por cada tarea que le asignan
+
+ahora lo que hay que hacer es MERGEAR tu branch que acabas de pushear a la rama principal
+en este contexto y este paso se supondria que vos ya probaste tanto localmente como en un entorno de pruebas
+entonces estas seguro de que lo que vas a mergear no va a afectar el codigo y comprometer nada
+ahora lo que tenes que hacer es un PR o MR
+pull request o merge request, aca en github es PR, lo que le decis es el branch origen y destino
+
+
+
+a en realidad como es un repo vacio no hay otros branch
+por lo general cuando armas un repo siempre tenes 3 branch que son los oficiales:
+
+develop o development
+staging
+master o production
+
+son 3 ambientes y 3 branches protegidos
+ pero aca no los tenemos
+
+vamos al visual y dsps volvemos con git
+ok
+
+mira
+
+ya visual te dice en que repo estas laburando, que branch es y toda la bola, lo que hicimos por comando se puede hacer desde visual
+
+
+eso fue lo mismo que hacer un: git checkout -b nuevo_branch
+
+ahora todo lo que hagas se va a ver en este branch
+
+
+si ya tenes una lista, todas las listas implementan la interfaz ienumerable, entonces tienen los metodos
+add, delete, count, etc
+
+al hacer un metodo que solo sea get garantizas que ese valor no es modificable por fuera del objeto
+
+
+tene el pdf a mano si
+
+
+desde los form no deberiamos tener acceso directo a dar de alta una persona, si no que deberiamos tener una clase especifica que nos ofrezca esos metodoscontra tos? claaaro eso mismo
+
+dame 1 mintranqui busco un cafe
+
+listo
+
+ok
+
+aca bien en ese metodo podriamos dar de alta personas, vamos a ver como lo resolvemos de la mejor manera, lo primero se me ocurre agregar algun mecanismo de persistencia sencillo, tipo json
+
+ahi mismo podriamos escribir todo el codigo para guardar en el archivo, insertar, recuperar, pero no seria lo correcto, vamos a delegarle ese trabajo al repository, que es un patron , dsps buscalo, pero tampoco estaria bien instancias directamente la clase, mira
+
+
+cuando vos en una clase tenes una creacion de una instancia (new) de otra clase lo que estas generando es un acoplamiento, basicamente necesicas de esa instancia para poder trabajar, si el dia de ma;ana cambia la definicion de esa clase estas obligado a tocar todo el sistema y todos los lugares donde utilices esa clase, se dice entonces que hay un acoplamiento fuerte!
+
+
+
+hice un cambio y otra vez se me rompio el sistema,
+
+para lograr disminuir ese acoplamiento se usa la inyeccion de dependencia
+
+entonces lo que logras es tener un acoplamiento debil, es decir:
+bajo acoplamiento, alta cohesion.
+
+se entiende?se
+
+vamos a definir el comportamiento que le vamos a dar a nuestras entidades, son ellas las que nos dicen que podemos hacer en el sistema
+
+en las interfaces (contratos) definimos comportamientos, pero NO como vamos a implementar esos comportamientos, eso se hace en la clase que implementa dicha interfaz
+
+ahora nos pincha porque dice che esta bien queres implementar la interfaz pero no veo los metodos
+
+ahora implementamos la interfaz, hay que darle codigo...
+
+lpm no entendia el error, claro estamos devolviendo un objeto que no es publico, pero quien lo devuelve si es publico, se etendiosi
+
+bien, ahora tenemos el contrato, tenemos la clase que implementa ese contrato (luego metemos el tema de la persistencia, ahora hay que configurar la inyeccion manos a la obtr :Pamen)
+
+basicamente vos lo que queres decir con la inyeccion es che, yo voy a laburar con una interfaz pero quiero que cuando yo use ESA interfaz, inyectame TAl o CUAL clase, para eso hay un motor que mantiene en sesion la vinculacion entre interfaz y clase
+
+solo puede haber un vinculo entre interfaz y clase, 
+
+una clase puede heredar de una clase e implementar muchas interfaces,
+
+peeero, cuando laburas con inyeccion una clase  una interfaz, para que el motor lo pueda resolver correctamente
+
+antes de que se ejecute el form1 tenemos que decirle que genere la inyeccion
+
+
+ahora seguimos configurando pero antes
+
+yo ahora voy a laburar con las interfaces no con la clase, entonces uno dice puta si laburo con la interfaz como sabe que tiene que ir a tal clase? si cuando le doy f12 me lleva a la interfaz
+
+bueno eso se resuelve en tiempo de ejecucion el motor, si le das ctrl+f12 el visual te lleva a la clase que la implementa
+
+bueno ahora si hay que configurar el motor
+
+esto es agregar la libreria que querramos usar
+autofac
+microsoft.aspnet.dependencyinyection
+etc
+
+y son 2 lineas de codigo para configurar la inyeccion
+
+depende la libreria cambia sutilmente el nombre del metodo o el orden de como se configura pero mas o menos siempre es igual
+
+en net core, lo vemos dsps, tmb es igual
+
+okahi basicamente lo que le estamos dicienco es che, cuando alguien utilice IPersonaRepository, linkeala a la clase PersonaRepository
+
+para eso tenes que armar la interfaz
+implementar esa interfaz en una clase
+y configurar en el motor, si o si esa clase tiene que implementar la interfaz
+
+bien, ya casi esta, ahora hay que ver como le decimos a la construccion del form que resuelva esa dependencia porque ahi tenemos un acoplamiento, basicamente estamos haciendo un new de un formulario y no estaria del todo bien
+
+dale
+
+vamos a usar el motor propio de .net
+
+vamos a ver si funciona la magia
+
+es medio dificil de explicar el motor en si, el patro inyeccion de dependencia lo que hace es bajar el acoplamiento laburando con interfaces y linckeando esas interfaces a clases
+
+ahora cada motoro lo implementa con cambios sutiles
+
+primero genera un servicecollection donde ahi podes agregar todos los linkeos, fijate que dice addsingleton y ahi linkea interfaz - clase
+
+dsps hace un buildserviceprovider, ahi onda que compila todas esas directrices
+
+ahi falta todavia configurar la inyeccion para auto
+
+y dsps le decimos magicamente que el form1 va a necesitar inyeccion, fijate que en vez de hacer el viejo new Form1 ahora lo hace de otra manera, fijate que en ningun lado metimos un new ......
+
+se entiende algo?
+sisi
+alabado hermano
+
+jajaja
+
+
+eeeso ahi me gusto, fijate que una inyeccion la resolvio
+
+
+el error de recien decia algo de auto, claramente no hicimos lo mismo para auto
+vamos a sacar esa inyeccion del form
+
+
+mira el paso a paso, aca es donde quiero que prestes total atencion :POK
+
+
+fijate que en ningun momento utilizamos un NEW
+
+fijate que en ningun momento utilizamos la clase PersonaRepository
+
+solo le dijimos que cuando lea un IPersonaRepository, trate de linkearlo con un PersonaRepository....
+
+no hay new por ningun lado
+
+voy a pasar el mouse por la variable y vas a leer personaRepository
+
+la variable personaRepository es de tipo IPersonaRepository, pero recibio un PersonaRepository
+
+eso lo realizo la inyeccion
+
+se entiende?
+perfecto
+
+amen
+ahora bien
+
+esa variable llego por el constructor, porque la guardo en otra variable? y bien, porque si no la pierdo
+
+o sea para poder usarla en otros metodos, eso se entiende?si
+ bien
+
+ahora cuando vayamos al metodo AgregarPersona deberiamos ir al metodo de la clase si es que la inyeccion termino bien
+
+ahora la variable personaRepository apunta a la clase y no a la interfaz
+
+
+-la inyeccion tmb utiliza algo que se llama polimorfismo, dsps lo vemos, es algo que se logra con interfaces o atraves de ellas-
+
+voy con f11 asi vemos el paso a paso
+
+y bueno funciono como esperabamos, obviamente el metodo no hace nada, aca tenes que hacer que persista en el json, pero la inyeccion funciono!
+
+se entendio todosI?
+lo que no entiendo
+el profesor esperaba que usen alguna cola o lista enlazada no?
+en ves de json
+
+ese listo of es de visual basic
+try cath para capturar errores
+clases de vista se lo que es pero tendria que leer el material que les dio el profe a ver si hablamos de lo mismo, peeero basicamente es lo siguiente:
+
+me interemosmae nmtaos lo de json
+el tipo lo tiro mas basico
+sip, primero no veo nada de cola enlazadaclaro tenes razon
+
+bien, vamos a ver un tema antes
+
+el chabon dice clases de vista en el punto 2
+(dame un minutook meto baño)
+
+clases de vista puede referirse al famoso
+ViewModel
+
+imaginate lo siguiente:
+por wht hablamos de dominio, entidades, DDD o sea drive domain desing, o desarrollo guiado por dominio, eso se entendio?
+..volvi
+te decia, eso que halamos por wht de ddd, dominio, entidad y todo eso, se entendio la idea?si
+eyos  yo no pasaba mas de crear la clase
+todo en uno
+ahora bmiaesn o menos entiendo eso
+bien
+
+esto que vimos recien hay banda de conceptos, por ejemplo solid
+son 5 principios, dsps leelos
+uno dice princpio de responsabilidad unica, si tenes una clase que hace todo, esta mal\
+
+fijate que en este ejercicio empezamos a aplicar ese principio segregando responsabilidades
+
+hay otro que dice principio de segregacion de interfaces, aca tmb lo estamos aplicando mira
+
+te parece bien que la interfaz persona, tenga metodos para auto?
+nop
+bien, eso se es el principio de segregacion de interfaces, si tenes una interfaz que hace mas de una cosa, el problema es que en la clase persona vas a tener metodos que no te sirven, los de auto
+y solo vas a usar los de personas
+
+bueno ahi estan los dos principios, el de responsabilidad unica y el de segregacion de interfaces
+el de segregacion te dice basicamente que si tenes una interfaz que expone mucho, seguramente necesites mas interfaces y que hagas interfaces y metodos atomicos, se entiende?si
+en solid tmb hablan de inversion de contorl e inyeccion de dependepnecrio ahi ya me mareas
+
+con que?es como mucho onda me cuesta asimilar esta parte hasta que lo tenga aceitado, despues es aprender distintos metodos como este solid o algun patron etc
+
+si totalmente, dsps con la practica salen, pero esto que venimos hablando al menos se entiende?seee
+
+perfioaj te pensa que de vb salto a mil cosas que nunca use,,de e
+sta forma lo voy entendiendo re claro que por ahi con un video no lo capto
+
+
+totalmente, fijate que con un ejercicio implementamos
+. inyeccion de dependencia
+. segregacion de interfaces
+. responsabilidad unica
+ya me acorde
+
+clases de vista o view model
+
+imaginate que en tu domino tenes una clase tarjetadecredito
+
+tenes los atributos id, numero, fecha, titular, CODIGO DE SEGURIDAD
+y mas datos
+
+onda datos sensibles de tu backend y de tu negocio
+
+hay cosas que no queres mostrar al front
+
+entonces haces un clase con menos atributos y mapeas de tu entidad a esa clase solo lo que queres retornar al front, a eso se lo conoce como clases de vista o viewmodel, igual tendria que leer lo que les paso el profe, pero mas o menos se entiende>claro
+
+bien, para agregar una persona tendriamos que tener unos textbox para que alguien cargue los datos, siesiso p etre ol oeeso ya lo sabemos,, onda,, mostrame lo de la persistencia que me llama la atnecion
+
+bieen, vamos a lo practico
+teniendo el modal con los datos, tenemos que crear un objeto persona y persistirlo...
+
+
+aca si podemos usar un new pero porque vamos a usar una clase POCO o una clase plana sin funcionamiento, lo que no podemos es abusar del new para clases que si ofrecen funcionalidad como la del person repositiry
+
+vamos a tener que cambiar la FIRMA del metodo...
+a eso se lo conoce como firma, al conjunto de parametros
+
+y tmb en la clase implementadora

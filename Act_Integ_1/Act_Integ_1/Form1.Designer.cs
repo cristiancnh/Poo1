@@ -39,6 +39,7 @@
             this.Cmd_P_Borrar = new System.Windows.Forms.Button();
             this.Cmd_A_Borrar = new System.Windows.Forms.Button();
             this.Cmd_P_Asignar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -48,9 +49,9 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 53);
+            this.dataGridView1.Location = new System.Drawing.Point(23, 85);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(372, 197);
+            this.dataGridView1.Size = new System.Drawing.Size(372, 165);
             this.dataGridView1.TabIndex = 0;
             // 
             // dataGridView2
@@ -142,11 +143,21 @@
             this.Cmd_P_Asignar.UseVisualStyleBackColor = true;
             this.Cmd_P_Asignar.Click += new System.EventHandler(this.Cmd_P_Asignar_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 54);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Personas";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 477);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Cmd_P_Asignar);
             this.Controls.Add(this.Cmd_A_Borrar);
             this.Controls.Add(this.Cmd_P_Borrar);
@@ -165,6 +176,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -181,6 +193,7 @@
         private System.Windows.Forms.Button Cmd_P_Borrar;
         private System.Windows.Forms.Button Cmd_A_Borrar;
         private System.Windows.Forms.Button Cmd_P_Asignar;
+        private System.Windows.Forms.Label label1;
     }
 }
 

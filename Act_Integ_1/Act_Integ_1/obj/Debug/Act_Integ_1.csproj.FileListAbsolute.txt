@@ -8,3 +8,32 @@ C:\Users\cherrera\Desktop\Actividad Integradora 11\Act_Integ_1\Act_Integ_1\bin\D
 C:\Users\cherrera\Desktop\Actividad Integradora 11\Act_Integ_1\Act_Integ_1\bin\Debug\Act_Integ_1.pdb
 C:\Users\cherrera\Desktop\Actividad Integradora 11\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.exe
 C:\Users\cherrera\Desktop\Actividad Integradora 11\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.pdb
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.csproj.AssemblyReference.cache
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.Form1.resources
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.Properties.Resources.resources
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.csproj.GenerateResource.cache
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.csproj.CoreCompileInputs.cache
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.exe
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.pdb
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\Act_Integ_1.exe.config
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\Act_Integ_1.exe
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\Act_Integ_1.pdb
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\System.Buffers.dll
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\System.Memory.dll
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\System.Buffers.xml
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\System.Memory.xml
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\cherrera\_proyectos\facu\poo\Act_Integ_1\Act_Integ_1\obj\Debug\Act_Integ_1.csproj.CopyComplete

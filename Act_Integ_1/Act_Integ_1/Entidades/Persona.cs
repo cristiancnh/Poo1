@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace Act_Integ_1
 {
-    class Persona
+    public class Persona
     {
+        //atributos
         public int _Dni { get; set; }
         public string _Nombre { get; set; }
         public string _Apellido { get; set; }
+        public List<Auto> Autos { get; set; }
+        public int CantidadAutos { get { return Autos.Count(); } }
 
+        //constructores
         public Persona(int Dni, string Nombre, string Apellido)
         {
             _Dni = Dni;
@@ -19,13 +23,10 @@ namespace Act_Integ_1
             _Apellido = Apellido;
         }
 
+        //destructores
         ~Persona()
         {
         }
-
-        public List<Auto> Autos { get; set; }
-        public int Cantidad_Autos { get; set; }
-
     }
 }
 

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Act_Integ_1.Entidades;
+using Act_Integ_1.Infraestructura;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +19,17 @@ namespace Act_Integ_1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            IServiceCollection serviceCollection = new ServiceCollection();
+
+            serviceCollection.AddSingleton<IPersonaRepository, PersonaRepository>();
+
+            serviceCollection.AddScoped<Form1>();
+
+            var services = serviceCollection.BuildServiceProvider();
+
+            var form1 = services.GetRequiredService<Form1>();
+            Application.Run(form1);
         }
     }
 }

@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace Act_Integ_1
 {
-    class Auto
+    public class Auto
     {
         public string _Patente { get; set; }
         public string _Marca { get; set; }
         public string _Modelo { get; set; }
         public string _Año { get; set; }
         public decimal _Precio { get; set; }
+        public Persona Persona { get; }
 
         public Auto(string Patente, string Marca, string Modelo, string Año, decimal Precio)
         {
